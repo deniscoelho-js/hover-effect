@@ -1,5 +1,7 @@
 # Hover Effect
 
+![v](https://user-images.githubusercontent.com/83840866/153713113-f246cf83-0466-4c98-ac51-7243bd3ea54d.gif)
+
 ## Tecnologias
 
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
