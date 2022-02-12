@@ -7,7 +7,7 @@
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 - [React]()
-- [Javascript]()
+- [Typescript]()
 - [SCSS]()
 
 ## Instalação e uso
