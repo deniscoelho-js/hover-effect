@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import './App.scss';
+import data from './data';
 
 function App() {
+
+  const [person, setPerson] = useState(data)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section>
+      
+      {
+        person.map((item, index)=>(
+          <div className='box' key={index}>
+            <div className="list">
+              <div className='imgBox' >
+                  <img src={item.img}  />
+              </div>
+              <div className='content' >
+                <h4>{item.name}</h4>
+                <p>{item.profession}</p>
+              </div>
+           </div>
+          </div>
+        ))
+      }
+    </section>
   );
 }
 
